@@ -1,8 +1,7 @@
 package rooms;
 
-import people.Person;
+import person.Person;
 import items.Item;
-
 import java.util.Arrays;
 
 public abstract class Room {

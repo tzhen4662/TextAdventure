@@ -2,7 +2,7 @@ package game;
 
 import items.Item;
 import rooms.*;
-import people.Person;
+import person.Person;
 
 import java.util.Scanner;
 
@@ -33,7 +33,7 @@ public class GameRunner {
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the Halls of Tech, " + player1.getFirstName());
+            System.out.println("Welcome to the Halls of Tech, " + player1.getName());
             map[0][0].addOccupant(player1);
 
             tech.printMap();
