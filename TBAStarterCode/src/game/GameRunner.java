@@ -41,14 +41,6 @@ public class GameRunner {
             String move = player1.chooseMove();
             Utilities.movePlayer(tech, player1,move);
             //gameOn = false;
-            
-
-
-
-
-
-
-
         }
 		in.close();
     }
