@@ -2,7 +2,9 @@ package realgame;
 
 import person.Person;
 import java.util.Scanner;
-
+/*
+ * @author Tim Zhen and Zilong Yuen
+ */
 public class Runner {
 	public static void main (String[] args)
 	{
