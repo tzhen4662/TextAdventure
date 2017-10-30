@@ -1,7 +1,6 @@
 package person;
 
 import person.Person;
-import rooms.Room;
 
 public abstract class Person {
 	private String name;
@@ -22,23 +21,9 @@ public abstract class Person {
 		return name;
 	}
 	
-	public char[] print() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void printRoom() {
-		// TODO Auto-generated method stub
-	}
-
-	public void setRoom(Room room) {
-		// TODO Auto-generated method stub
+	public String chooseMove()
+	{
 		
 	}
-
-	public String chooseMove() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 }
