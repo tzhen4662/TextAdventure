@@ -9,4 +9,9 @@ public class Utilities {
 		return null;
 	}
 
+	public static void movePlayer(School tech, Person player1, String move) {
+		
+		
+	}
+
 }

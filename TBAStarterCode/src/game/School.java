@@ -3,9 +3,15 @@ package game;
 import rooms.Room;
 
 public class School {
-
+	private Room[][]map;
+	
 	public School(Room[][] map) {
-		// TODO Auto-generated constructor stub
+		this.map = map;
+	}
+
+	public void printMap() {
+		System.out.println(map);
+		
 	}
 
 }
