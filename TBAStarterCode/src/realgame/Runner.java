@@ -33,14 +33,10 @@ public class Runner {
 		System.out.println("Which direction would you like to move?");
 		Scanner in = new Scanner(System.in);
 		String response = in.nextLine();
-		if (response == "up" || response == "left" || response == "right" || response == "down")
+		if (response.equals("up") || response.equals("left") || response.equals("right") || response.equals("down"))
 			System.out.println("no");
 		else
 			System.out.println("you cant do that");
 			Runner.main(args);
-			rooms[currentPosX + 1][currentPosY + 1] = "UserT";
-			rooms[currentPosX][currentPosY] = "Empty";
-			currentPosX++;
-			currentPosY++;
 	}
 }
