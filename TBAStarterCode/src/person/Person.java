@@ -47,7 +47,7 @@ public class Person {
 		else
 		{
 			System.out.println("you cant do that");
-
+			return "lol";
 		}
 	}
 
