@@ -6,7 +6,7 @@ import person.Person;
 import realgame.Runner;
 import rooms.Room;
 
-public abstract class Person {
+public class Person {
 	private String name;
 	private int age;
 	private String gender;
