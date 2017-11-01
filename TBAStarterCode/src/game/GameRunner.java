@@ -1,6 +1,5 @@
 package game;
 
-import items.Item;
 import rooms.*;
 import person.Person;
 
@@ -18,9 +17,8 @@ public class GameRunner {
             {
                 boolean[] doors = {true,true,true,true};
                 Person[] people = {};
-                Item[] items = {};
 
-                row[i] = new Hallway(doors, people, items, i, j);
+                row[i] = new Hallway(doors, people, i, j);
             }
 
         }

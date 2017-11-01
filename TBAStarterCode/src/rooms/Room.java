@@ -1,24 +1,21 @@
 package rooms;
 
 import person.Person;
-import items.Item;
 import java.util.Arrays;
 
 public abstract class Room {
 
     private boolean[] doors;
     private Person[] occupants;
-    private Item[] items;
     public boolean explored;
     private int x, y;
 
-    public Room (boolean[] doors, Person[] occupants, Item[] items, int x, int y)
+    public Room (boolean[] doors, Person[] occupants, int x, int y)
     {
     	this.x = x;
     	this.y = y;
         this.doors = doors;
         this.occupants = occupants;
-        this.items = items;
         this.explored = false;
     }
 
@@ -54,9 +51,5 @@ public abstract class Room {
     	return y;
     }
     public abstract void print();
-
-
-
-
-
-}
+    	
+	}

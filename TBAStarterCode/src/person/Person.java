@@ -8,10 +8,11 @@ import rooms.Room;
 
 public class Person {
 	private String name;
-	private int age;
+	private String age;
 	private String gender;
+	private Room room;
 	
-	public Person(String name, int age, String gender)
+	public Person(String name, String age, String gender)
 	{
 		this.name = name;
 		this.age = age;
@@ -47,17 +48,16 @@ public class Person {
 		else
 		{
 			System.out.println("you cant do that");
-			return "lol";
+			return "no";
 		}
 	}
 
 	public void printRoom() {
-		for ()
+		
 	}
 
 	public void setRoom(Room room) {
 		this.room = room;
-		
 	}
 
 	public char[] print() {

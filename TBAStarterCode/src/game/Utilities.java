@@ -1,23 +1,20 @@
 package game;
 
 import person.Person;
-
+import java.util.Scanner;
 import java.util.Random;
 
 public class Utilities {
 
 	public static Person createPerson() {
-		Random r = new Random();
-		int x = r.nextInt(2);
-		switch(x)
-		{
-			case 0:
-				return new Person("Tim", 5, "Male");
-			case 1:
-				return new Person("Zilong", 6, "Female");
-			default:
-				return new Person("ZhenYuen", 24, "Female");
-		}
+		System.out.println("What is your name?");
+		Scanner in = new Scanner(System.in);
+		String response = in.nextLine();
+		System.out.println("What is your age?");
+		String age = in.nextLine();
+		System.out.println("What's your gender?");
+		String gender = in.nextLine();
+		return new Person (response, age, gender);
 	}
 
 	public static void movePlayer(School tech, Person player1, String move) {
