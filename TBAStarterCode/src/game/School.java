@@ -14,10 +14,16 @@ public class School {
 		{
 			for (int j = 0; j < 5; j++)
 			{
-				System.out.print(" [ " + " "+ " ] ");
+				if (i == 0 && j == 0)
+				{
+					System.out.print(" [ " + "Playr" + " ] ");
+				}
+				else		
+					System.out.print(" [ " + "Empty" + " ] ");
 			}
 			System.out.println("");
-		}
+		} 
+
 	}
 
 }

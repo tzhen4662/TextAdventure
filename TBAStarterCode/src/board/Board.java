@@ -16,8 +16,6 @@ public class Board {
 
     public void printMap()
     {
-
-
         for(Room[] row : schoolMap)
         {
             for (Room room : row)

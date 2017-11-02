@@ -53,7 +53,7 @@ public class Person {
 	}
 
 	public void printRoom() {
-		
+		System.out.println("You are currently in a safe room.");
 	}
 
 	public void setRoom(Room room) {
