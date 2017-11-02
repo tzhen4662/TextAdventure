@@ -31,7 +31,8 @@ public class GameRunner {
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the Halls of Tech, " + player1.getName());
+            System.out.println("Welcome to the TimLand, " + player1.getName() + ", you must navigate your way around the zombies in TimLand." 
+            + " If you bump into a zombie you're dead." + " Good Luck!");
             map[0][0].addOccupant(player1);
 
             tech.printMap();
