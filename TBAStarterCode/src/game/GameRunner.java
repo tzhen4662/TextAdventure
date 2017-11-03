@@ -4,7 +4,9 @@ import rooms.*;
 import person.Person;
 
 import java.util.Scanner;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class GameRunner {
 
     public static void main (String[] args)
