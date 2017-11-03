@@ -3,7 +3,6 @@ package person;
 import java.util.Scanner;
 
 import person.Person;
-import realgame.Runner;
 import rooms.Room;
 /*
  * @authors:Tim Zhen and Zilong Yuen
