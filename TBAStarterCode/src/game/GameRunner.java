@@ -41,7 +41,11 @@ public class GameRunner {
             player1.printRoom();
             player1.chooseMove();
             //Utilities.movePlayer(tech, player1,move);
-            //gameOn = false;
+            if(player1.getY() > 5 || player1.getY() < 0 || player1.getX() > 5 || player1.getX() < 0)
+			{
+            	System.out.print("omae wa mou shindeiru");
+				gameOn = false;
+			}
         }
 		in.close();
     }

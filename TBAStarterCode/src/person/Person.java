@@ -64,11 +64,6 @@ public class Person {
 	public void setRoom(Room room) {
 		this.room = room;
 	}
-
-	public char[] print() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	public int getX()
 	{
@@ -78,5 +73,10 @@ public class Person {
 	public int getY()
 	{
 		return yCoord;
+	}
+
+	public char[] print() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
