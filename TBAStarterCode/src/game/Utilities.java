@@ -2,7 +2,9 @@ package game;
 
 import person.Person;
 import java.util.Scanner;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class Utilities {
 
 	public static Person createPerson() {

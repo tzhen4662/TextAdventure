@@ -1,8 +1,9 @@
 package rooms;
 
 import person.Person;
-
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class Hallway extends Room {
 
     public Hallway(boolean[] doors, Person[] people, int x, int y)

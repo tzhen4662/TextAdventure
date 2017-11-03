@@ -4,7 +4,9 @@ import rooms.Room;
 import person.Person;
 
 import java.util.Scanner;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class School {
 	private Room[][]map;
 	

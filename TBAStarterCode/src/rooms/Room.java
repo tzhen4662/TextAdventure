@@ -2,7 +2,9 @@ package rooms;
 
 import person.Person;
 import java.util.Arrays;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public abstract class Room {
 
     private boolean[] doors;

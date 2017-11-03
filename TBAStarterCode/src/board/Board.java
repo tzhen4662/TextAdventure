@@ -1,7 +1,9 @@
 package board;
 
 import rooms.Room;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class Board {
 
 

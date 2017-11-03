@@ -5,7 +5,9 @@ import java.util.Scanner;
 import person.Person;
 import realgame.Runner;
 import rooms.Room;
-
+/*
+ * @authors:Tim Zhen and Zilong Yuen
+ */
 public class Person {
 	private String name;
 	private String age;
