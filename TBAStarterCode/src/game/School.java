@@ -17,9 +17,9 @@ public class School {
 		{
 			for (int j = 0; j < 5; j++)
 			{
-				if (i == player1.getX() && j == player1.getY())
+				if (j == player1.getX() && i == player1.getY())
 				{
-					System.out.print(" [ " + "Playr" + " ] ");
+					System.out.print(" [ " + "  P  " + " ] ");
 				}
 				else
 					System.out.print(" [ " + "Empty" + " ] ");

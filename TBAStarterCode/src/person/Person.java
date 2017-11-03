@@ -29,31 +29,30 @@ public class Person {
 		return name;
 	}
 	
-	public int chooseMove()
+	public void chooseMove()
 	{
 		System.out.println("Which direction would you like to move?");
 		Scanner in = new Scanner(System.in);
 		String response = in.nextLine();
 		if (response.equals("up"))
 		{
-			return yCoord - 1;
+			this.yCoord -= 1;
 		}
 		else if (response.equals("down"))
 		{
-			return yCoord + 1;
+			this.yCoord += 1;
 		}
 		else if (response.equals("right"))
 		{
-			return xCoord + 1;
+			this.xCoord += 1;
 		}
 		else if (response.equals("left"))	
 		{
-			return xCoord - 1 ;
+			this.xCoord -= 1 ;
 		}
 		else
 		{
 			System.out.println("You cant do that!");
-			return 0;
 		}
 	}
 
