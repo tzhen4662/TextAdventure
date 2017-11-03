@@ -2,7 +2,6 @@ package game;
 
 import person.Person;
 import java.util.Scanner;
-import java.util.Random;
 
 public class Utilities {
 
@@ -14,10 +13,10 @@ public class Utilities {
 		String age = in.nextLine();
 		System.out.println("What's your gender?");
 		String gender = in.nextLine();
-		return new Person (response, age, gender);
+		return new Person (response, age, gender, 0, 0);
 	}
 
-	public static void movePlayer(School tech, Person player1, String move) {
+	public static void movePlayer(School land, Person player1, String move) {
 		
 	}
 

@@ -11,12 +11,17 @@ public class Person {
 	private String age;
 	private String gender;
 	private Room room;
+	private int xCoord;
+	private int yCoord;
 	
-	public Person(String name, String age, String gender)
+	
+	public Person(String name, String age, String gender, int xCoord, int yCoord)
 	{
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
+		this.xCoord = xCoord;
+		this.yCoord = yCoord;
 	}
 	
 	public String getName()
@@ -24,31 +29,31 @@ public class Person {
 		return name;
 	}
 	
-	public String chooseMove()
+	public int chooseMove()
 	{
 		System.out.println("Which direction would you like to move?");
 		Scanner in = new Scanner(System.in);
 		String response = in.nextLine();
 		if (response.equals("up"))
 		{
-			return "up";
+			return yCoord - 1;
 		}
 		else if (response.equals("down"))
 		{
-			return "down";
+			return yCoord + 1;
 		}
 		else if (response.equals("right"))
 		{
-			return "right";
+			return xCoord + 1;
 		}
 		else if (response.equals("left"))	
 		{
-			return "left";
+			return xCoord - 1 ;
 		}
 		else
 		{
-			System.out.println("you cant do that");
-			return "no";
+			System.out.println("You cant do that!");
+			return 0;
 		}
 	}
 
@@ -65,4 +70,13 @@ public class Person {
 		return null;
 	}
 	
+	public int getX()
+	{
+		return xCoord;
+	}
+	
+	public int getY()
+	{
+		return yCoord;
+	}
 }

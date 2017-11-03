@@ -33,12 +33,12 @@ public class GameRunner {
         {
             System.out.println("Welcome to the TimLand, " + player1.getName() + ", you must navigate your way around the zombies in TimLand." 
             + " If you bump into a zombie you're dead." + " Good Luck!");
-            map[0][0].addOccupant(player1);
+            //map[0][0].addOccupant(player1);
 
-            tech.printMap();
+            tech.printMap(player1);
             player1.printRoom();
-            String move = player1.chooseMove();
-            Utilities.movePlayer(tech, player1,move);
+            player1.chooseMove();
+            //Utilities.movePlayer(tech, player1,move);
             //gameOn = false;
         }
 		in.close();

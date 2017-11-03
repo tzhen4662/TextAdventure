@@ -1,6 +1,9 @@
 package game;
 
 import rooms.Room;
+import person.Person;
+
+import java.util.Scanner;
 
 public class School {
 	private Room[][]map;
@@ -9,19 +12,19 @@ public class School {
 		this.map = map;
 	}
 
-	public void printMap() {
+	public void printMap(Person player1) {
 		for (int i = 0; i < 5; i++)
 		{
 			for (int j = 0; j < 5; j++)
 			{
-				if (i == 0 && j == 0)
+				if (i == player1.getX() && j == player1.getY())
 				{
 					System.out.print(" [ " + "Playr" + " ] ");
 				}
-				else		
+				else
 					System.out.print(" [ " + "Empty" + " ] ");
 			}
-			System.out.println("");
+			System.out.println(" ");
 		} 
 
 	}
