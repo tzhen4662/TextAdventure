@@ -33,7 +33,7 @@ public class GameRunner {
         Scanner in = new Scanner(System.in);
         while(gameOn)
         {
-            System.out.println("Welcome to the TimLand, " + player1.getName() + ", you must navigate your way around the zombies in TimLand." 
+            System.out.println("Welcome to the ZombiLand, " + player1.getName() + ", you must navigate your way around the zombies in ZombiLand." 
             + " If you bump into a zombie you're dead." + " Good Luck!");
             //map[0][0].addOccupant(player1);
 
