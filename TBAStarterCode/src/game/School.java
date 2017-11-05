@@ -2,8 +2,8 @@ package game;
 
 import rooms.Room;
 import person.Person;
+import rooms.Hallway;
 
-import java.util.Scanner;
 /*
  * @authors:Tim Zhen and Zilong Yuen
  */
@@ -22,6 +22,22 @@ public class School {
 				if (j == player1.getX() && i == player1.getY())
 				{
 					System.out.print(" [ " + "  P  " + " ] ");
+				}
+				else if (j == 3 && i == 3)
+				{
+					System.out.print(" [ " + "Zombi" + " ] ");
+				}
+				else if (j == 1 && i == 1)
+				{
+					System.out.print(" [ " + "Zombi" + " ] ");
+				}
+				else if (j == 1 && i == 3)
+				{
+					System.out.print(" [ " + "Zombi" + " ] ");
+				}
+				else if (j == 2 && i == 1)
+				{
+					System.out.print(" [ " + "Zombi" + " ] ");
 				}
 				else
 					System.out.print(" [ " + "Empty" + " ] ");

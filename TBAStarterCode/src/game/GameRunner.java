@@ -35,17 +35,29 @@ public class GameRunner {
         {
             System.out.println("Welcome to the ZombiLand, " + player1.getName() + ", you must navigate your way around the zombies in ZombiLand." 
             + " If you bump into a zombie you're dead." + " Good Luck!");
+            System.out.println("PS: Don't try and leave the area");
             //map[0][0].addOccupant(player1);
 
             tech.printMap(player1);
             player1.printRoom();
             player1.chooseMove();
             //Utilities.movePlayer(tech, player1,move);
-            if(player1.getY() > 5 || player1.getY() < 0 || player1.getX() > 5 || player1.getX() < 0)
+            if (player1.getY() > 4 && player1.getX() > 4)
+        	{
+        		System.out.print("Congratulations! You have escaped ZombiLand!");
+        		gameOn = false;
+        	}
+            else if (player1.getY() > 4 || player1.getY() < 0 || player1.getX() > 4 || player1.getX() < 0)
 			{
-            	System.out.print("omae wa mou shindeiru");
+            	System.out.print("GAME OVER! You have jumped into the electric fences and shocked yourself!");
 				gameOn = false;
 			}
+            else if ((player1.getY() == 3 && player1.getX() == 3) || (player1.getY() == 1 && player1.getX() == 1) 
+            		|| (player1.getY() == 3 && player1.getX() == 1) || (player1.getY() == 1 && player1.getX() == 2))
+            {
+            	System.out.print("GAME OVER! You ran into a zombie! Better luck next time!");
+            	gameOn = false;
+            }
         }
 		in.close();
     }

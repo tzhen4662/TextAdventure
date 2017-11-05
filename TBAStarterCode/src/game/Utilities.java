@@ -18,8 +18,5 @@ public class Utilities {
 		return new Person (response, age, gender, 0, 0);
 	}
 
-	public static void movePlayer(School land, Person player1, String move) {
-		
-	}
 
 }
