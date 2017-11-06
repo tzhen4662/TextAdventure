@@ -30,6 +30,11 @@ public class Person {
 		return name;
 	}
 	
+	public String getAge()
+	{
+		return age;
+	}
+	
 	public void chooseMove()
 	{
 		System.out.println("Which direction would you like to move?");
